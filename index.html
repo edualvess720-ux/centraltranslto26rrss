@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LANGUAGE CLUB | Moda Oficial</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f7f7f7;
+      color:#111;
+    }
+
+    header{
+      background:#fff;
+      padding:20px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid #ddd;
+      position:sticky;
+      top:0;
+      z-index:999;
+    }
+
+    .logo{
+      font-size:34px;
+      font-weight:900;
+      letter-spacing:2px;
+    }
+
+    .logo span{
+      color:#8b5cf6;
+    }
+
+    nav a{
+      color:#111;
+      text-decoration:none;
+      margin-left:28px;
+      font-weight:bold;
+      font-size:15px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#8b5cf6;
+    }
+
+    .hero{
+      height:700px;
+      background:url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1800') center/cover;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:#fff;
+    }
+
+    .hero::before{
+      content:'';
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.55);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:800px;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:72px;
+      margin-bottom:20px;
+      text-transform:uppercase;
+    }
+
+    .hero p{
+      font-size:24px;
+      margin-bottom:35px;
+      color:#eee;
+    }
+
+    .btn{
+      background:#8b5cf6;
+      color:#fff;
+      padding:18px 40px;
+      border-radius:8px;
+      text-decoration:none;
+      font-size:17px;
+      font-weight:bold;
+      transition:0.3s;
+      display:inline-block;
+    }
+
+    .btn:hover{
+      background:#6d28d9;
+      transform:scale(1.05);
+    }
+
+    .collection{
+      padding:90px 60px;
+      background:#fff;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:42px;
+      margin-bottom:60px;
+      text-transform:uppercase;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:35px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 4px 18px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:360px;
+      object-fit:cover;
+    }
+
+    .card-body{
+      padding:25px;
+    }
+
+    .card h3{
+      font-size:24px;
+      margin-bottom:12px;
+    }
+
+    .card p{
+      color:#666;
+      line-height:1.7;
+    }
+
+    .price{
+      margin:18px 0;
+      font-size:28px;
+      color:#8b5cf6;
+      font-weight:bold;
+    }
+
+    .about{
+      background:#111;
+      color:#fff;
+      padding:90px 60px;
+      text-align:center;
+    }
+
+    .about h2{
+      font-size:48px;
+      margin-bottom:25px;
+    }
+
+    .about p{
+      max-width:800px;
+      margin:auto;
+      line-height:1.9;
+      color:#ccc;
+      margin-bottom:35px;
+    }
+
+    footer{
+      background:#fff;
+      padding:60px;
+      border-top:1px solid #ddd;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:40px;
+    }
+
+    footer h4{
+      margin-bottom:15px;
+      font-size:22px;
+    }
+
+    footer p{
+      line-height:1.8;
+      color:#555;
+      font-size:15px;
+    }
+
+    .copyright{
+      margin-top:40px;
+      border-top:1px solid #ddd;
+      padding-top:20px;
+      text-align:center;
+      color:#777;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:15px;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    LANGUAGE<span>CLUB</span>
+  </div>
+
+  <nav>
+    <a href="#">Novidades</a>
+    <a href="#">Masculino</a>
+    <a href="#">Feminino</a>
+    <a href="#">Coleções</a>
+    <a href="#">Contato</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>Moda que fala por você</h1>
+
+    <p>
+      Estilo premium, identidade urbana e peças criadas
+      pra quem não nasceu pra ser comum.
+    </p>
+
+    <a href="#" class="btn">
+      VER COLEÇÃO
+    </a>
+
+  </div>
+
+</section>
+
+<section class="collection">
+
+  <h2 class="section-title">
+    Destaques da Coleção
+  </h2>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200">
+
+      <div class="card-body">
+
+        <h3>Camiseta Signature</h3>
+
+        <p>
+          Modelagem premium com acabamento sofisticado.
+        </p>
+
+        <div class="price">
+          R$ 129,90
+        </div>
+
+        <a href="#" class="btn">
+          Comprar
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200">
+
+      <div class="card-body">
+
+        <h3>Moletom Urban Fit</h3>
+
+        <p>
+          Conforto absoluto com visual minimalista premium.
+        </p>
+
+        <div class="price">
+          R$ 249,90
+        </div>
+
+        <a href="#" class="btn">
+          Comprar
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200">
+
+      <div class="card-body">
+
+        <h3>Jaqueta Street Luxe</h3>
+
+        <p>
+          Design moderno inspirado na moda internacional.
+        </p>
+
+        <div class="price">
+          R$ 349,90
+        </div>
+
+        <a href="#" class="btn">
+          Comprar
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about">
+
+  <h2>
+    Lifestyle Premium
+  </h2>
+
+  <p>
+    Criamos roupas inspiradas na cultura urbana,
+    música, arte e comportamento contemporâneo.
+    Nossa missão é entregar peças exclusivas
+    com identidade forte e qualidade premium.
+  </p>
+
+  <a href="#" class="btn">
+    EXPLORAR AGORA
+  </a>
+
+</section>
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h4>Sobre Nós</h4>
+
+      <p>
+        Marca especializada em moda urbana premium,
+        streetwear e coleções exclusivas.
+      </p>
+
+    </div>
+
+    <div>
+
+      <h4>Contato</h4>
+
+      <p>Email: contato@languageclub.com.br</p>
+
+      <p>Telefone: (11) 4000-4000</p>
+
+      <p>WhatsApp: (11) 99999-9999</p>
+
+    </div>
+
+    <div>
+
+      <h4>Endereço</h4>
+
+      <p>
+        Rua Oscar Freire, 900<br>
+        Jardins - São Paulo/SP<br>
+        CEP: 01426-001
+      </p>
+
+      <p>
+        CNPJ: 12.345.678/0001-99
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 LANGUAGE CLUB — Todos os direitos reservados.
+  </div>
+
+</footer>
+
+</body>
+</html>
